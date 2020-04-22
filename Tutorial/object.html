@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScipt Objects</h2>
+    <p id="deme"></p>
+    <p id="demo"></p>
+
+    <script>
+        var person = {
+            firstName: "John",
+            lastName: "Due",
+            id: 1,
+            fullName: function() {
+                return this.firstName + " " + this.lastName
+            },
+            age: 50,
+            eyeColor: "blue"
+        };
+        document.getElementById('deme').innerHTML = person.fullName();
+        document.getElementById('demo').innerHTML = person.firstName + " is " + person.age + " year old !";
+    </script>
+</body>
+</html>
